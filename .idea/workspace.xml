@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08e5f858-82ea-4949-8c12-f8e97ea854b5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dDCZ0FLS2NTPrCX4UyCQMudECT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.github.tinselspoon.intellij.kubernetes.config.KubernetesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\parassharma\PycharmProjects\kubernetes" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08e5f858-82ea-4949-8c12-f8e97ea854b5" name="Default Changelist" comment="" />
+      <created>1591950328813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591950328813</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591950591642">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="142" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591950591642" />
+    <state x="432" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591965475711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="432" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591965475711" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1591950517289">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591950517289" />
+    <state x="1694" y="108" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598001169764">
+      <screen x="1366" y="0" width="1440" height="860" />
+    </state>
+    <state x="1694" y="108" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1598001169764" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1591965463450">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591965463450" />
+  </component>
+</project>

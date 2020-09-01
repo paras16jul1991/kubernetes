@@ -1,0 +1,12 @@
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+kubectl get pods
+kubectl get pods -o wide
+kubectl delete pod myapp
+kubectl describe pod podname
+kubectl run nginx --image=xyz
+kubectl apply -f pod_def.yml
+
+kubectl get replicaset
+kubectl delete replicaset myapp
+kubectl scale --replic=3 replicaset myapp

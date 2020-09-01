@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: webapp-color
+    labels:
+      name: webapp-color
+spec:
+    containers:
+        -   name: redis
+            image: redis
+            env:
+              - name: APP_COLOR
+                value: green
