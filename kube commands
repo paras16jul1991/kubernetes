@@ -10,3 +10,74 @@ kubectl apply -f pod_def.yml
 kubectl get replicaset
 kubectl delete replicaset myapp
 kubectl scale --replic=3 replicaset myapp
+
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+
+kubectl edit pod <pod-name>
+
+kubectl get ns --no-headers | wc -l
+
+k get pods -A | grep blue | wc -l
+
+kubectl delete pod -l name=busybox-pod
+
+kubectl exec -it ubuntu-sleeper -- date -s '19 APR 2012 11:14:00'
+
+kubectl get pods --selector bu=finance --no-headers | wc -l
+
+kubectl get pods -l 'environment in (production, qa)'
+
+k describe event yellow
+
+ k expose deploy simple-webapp-deployment --name=webapp-service --target-port=8080 --type=NodePort
+
+ k get event --field-selector involvedObject.name=yellow
+
+k expose pod redis --name=redis-service --port=6379 --type=ClusterIP
+
+k top node --sort-by=cpu --no-headers | head -1
+
+k get pods -l env=dev --no-headers | wc -l
+
+security context and capabilty (belong to container), role binding, role creating, service account, taint & toll
+,node affinity- operator Exists
+
+multi pod practice for log share with other container
+
+network policies between diff namespace and services
+
+logs write to -> host path
+
+        command:
+        - sh
+        - "-c"
+        - echo Hello Kubernetes! && sleep 3600
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  namespace: dv11987
+  labels:
+    run: time-check
+  name: time-check
+spec:
+  volumes:
+  - name: log-vol
+  containers:
+  - image: busybox
+    name: time-check
+    envFrom:
+    - configMapRef:
+       name: time-config
+    resources: {}
+    command: ["sh"]
+    args: ["-c","while true; do date; sleep $TIME_FREQ;done > /opt/t
+    volumeMounts:
+    - mountPath: /opt/time
+      name: log-vol
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+~
