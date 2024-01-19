@@ -56,3 +56,5 @@ kubectl port-forward service/myservice 5000 6000
 kubectl port-forward nats-depl-855d477f4d-xgbd7 5000:4222
 
 k expose pod  webapp-color --name=webapp-service2 --target-port=8080 --type=NodePort --port=57 
+
+kubectl exec --stdin --tty shell-demo -- /bin/bash
