@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: myapp
+  name: my-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - image: kodekloud/webapp-color
+        name: httpd
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: APP_COLOR
+          value: pink
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: myapp
+  ports:
+  - port: 77
+    targetPort: 8080
+    nodePort: 32199
+  type: NodePort
+
+ curl  localhost:32199
+
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/replicationcontroller?namespace=paras
+
+kubectl -n kubernetes-dashboard create token admin-user
+
+kubectl proxy
+
+
+webapp-color-service.default.svc.cluster.local
+
+
+kubectl port-forward service/myservice 5000 6000
+
+kubectl port-forward nats-depl-855d477f4d-xgbd7 5000:4222
+
+k expose pod  webapp-color --name=webapp-service2 --target-port=8080 --type=NodePort --port=57 
